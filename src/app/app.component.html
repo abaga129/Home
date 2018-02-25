@@ -19,16 +19,39 @@
 </ul> -->
 
 <div>
+  <mat-card>
+    <mat-card-title>
+        <h1>Ethan Reker</h1>
+    </mat-card-title>
+    <mat-card-content>
+
+    </mat-card-content>
+  </mat-card>
+<!--   
   <div class="mainHeader">
       <h1>Ethan Reker</h1>
       <h2>OPEN SOURCE PROJECTS</h2>
-  </div>
-  <div *ngFor="let project of projects">
-    <app-git-project [project]="project"></app-git-project>
-  </div>
+  </div> -->
+  <mat-card>
+    <mat-card-title>
+      Open Source Projects
+    </mat-card-title>
+    <mat-card-content>
+        <div *ngFor="let project of projects">
+            <app-git-project [project]="project"></app-git-project>
+          </div>
+    </mat-card-content>
+  </mat-card>
 
 
-  <div *ngFor="let plugin of plugins">
-    <app-plugin-project [plugin]="plugin"></app-plugin-project>
-  </div>
+  <mat-card>
+    <mat-card-title>
+      Audio Plugins
+    </mat-card-title>
+    <mat-card-content>
+        <div *ngFor="let plugin of plugins">
+            <app-plugin-project [plugin]="plugin"></app-plugin-project>
+          </div>
+    </mat-card-content>
+  </mat-card>
 </div>

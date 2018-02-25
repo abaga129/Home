@@ -1,12 +1,14 @@
 <a href={{project.projectURL}}>
-  <div class="bg">
-    <strong>
-        <h1>
-            {{project.name | uppercase}}
-        </h1>
-    </strong>
-    <p>
-      {{project.desc}}
-    </p>
-  </div>
+  <mat-card>
+    <mat-card-title>
+        {{project.name | uppercase}}
+    </mat-card-title>
+    <mat-card-content>
+        <div class="bg">
+            <p>
+              {{project.desc}}
+            </p>
+          </div>
+    </mat-card-content>
+  </mat-card>
 </a>
