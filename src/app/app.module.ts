@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 //Material
-import {MatCardModule} from '@angular/material'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCardModule, MatToolbarModule, MatIconModule} from '@angular/material'
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 import { AppComponent } from './app.component';
@@ -20,7 +22,10 @@ import { PluginProjectComponent } from './plugin-project/plugin-project.componen
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

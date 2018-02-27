@@ -17,41 +17,38 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul> -->
+<mat-toolbar color="primary">
+  <span>Ethan Reker</span>
+  <a href="https://www.github.com/abaga129/"><button mat-raised-button color="accent">GitHub</button></a>
+  <a href="https://www.linkedin.com/in/ethan-reker-0a827597/"><button mat-raised-button color="accent">Linked-In</button></a>
+</mat-toolbar>
 
-<div>
-  <mat-card>
-    <mat-card-title>
-        <h1>Ethan Reker</h1>
-    </mat-card-title>
-    <mat-card-content>
-
-    </mat-card-content>
-  </mat-card>
-<!--   
-  <div class="mainHeader">
-      <h1>Ethan Reker</h1>
-      <h2>OPEN SOURCE PROJECTS</h2>
-  </div> -->
-  <mat-card>
-    <mat-card-title>
-      Open Source Projects
-    </mat-card-title>
-    <mat-card-content>
-        <div *ngFor="let project of projects">
-            <app-git-project [project]="project"></app-git-project>
-          </div>
-    </mat-card-content>
-  </mat-card>
+<!-- <button mat-icon-button>Test</button> -->
+<!-- <button mat-fab>
+  <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+</button> -->
 
 
-  <mat-card>
-    <mat-card-title>
-      Audio Plugins
-    </mat-card-title>
-    <mat-card-content>
-        <div *ngFor="let plugin of plugins">
-            <app-plugin-project [plugin]="plugin"></app-plugin-project>
-          </div>
-    </mat-card-content>
-  </mat-card>
-</div>
+<mat-card>
+  <mat-card-title>
+    Open Source Projects
+  </mat-card-title>
+  <mat-card-content>
+      <div *ngFor="let project of projects">
+          <app-git-project [project]="project"></app-git-project>
+        </div>
+  </mat-card-content>
+</mat-card>
+
+
+<mat-card>
+  <mat-card-title>
+    Audio Plugins
+  </mat-card-title>
+  <mat-card-content>
+      <div *ngFor="let plugin of plugins">
+          <app-plugin-project [plugin]="plugin"></app-plugin-project>
+        </div>
+  </mat-card-content>
+</mat-card>
+
