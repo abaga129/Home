@@ -39,17 +39,17 @@ export class AppComponent {
     {
       name: "EpicPress",
       desc: "Stereo Cross-over Delay",
-      imageURL: "../assets/epicpress.png"
+      imageURL: "assets/epicpress.png"
     },
     {
       name: "M4 Multiband Compressor",
       desc: "Stereo Cross-over Delay",
-      imageURL: "../assets/m4.png"
+      imageURL: "assets/m4.png"
     },
     {
       name: "Entropy II",
       desc: "Stereo Cross-over Delay",
-      imageURL: "../assets/entropyii.png"
+      imageURL: "assets/entropyii.png"
     }
   ]
 

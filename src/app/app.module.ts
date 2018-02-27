@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 //Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatCardModule, MatToolbarModule, MatIconModule} from '@angular/material'
+import {MatCardModule, MatToolbarModule, MatIconModule, MatExpansionModule, MatIconRegistry} from '@angular/material'
 import {MatButtonModule} from '@angular/material/button';
 
 
@@ -11,6 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { GitProjectComponent } from './git-project/git-project.component';
 import { PluginProjectComponent } from './plugin-project/plugin-project.component';
+
+// MatIconRegistry.addSvgIcon("github", "assets/github.svg");
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { PluginProjectComponent } from './plugin-project/plugin-project.componen
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
