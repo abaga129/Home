@@ -1,10 +1,12 @@
-<div ng-app="MyApp" ng-controller="MyController">
+<div ng-app="MyApp" ng-controller="iconController">
   <mat-toolbar color="primary">
     <img src="assets/myavatar.jpeg" class="img-circle">
     <span>Ethan Reker</span>
     <a href="https://www.github.com/abaga129/"><button mat-raised-button color="accent" style="margin:10px">GitHub</button></a>
     <a href="https://www.linkedin.com/in/ethan-reker-0a827597/"><button mat-raised-button color="accent">Linked-In</button></a>
   </mat-toolbar>
+
+  <img src="assets/header.jpeg" style="width: 100%">
 
   <mat-expansion-panel>
     <mat-expansion-panel-header color="primary">
@@ -27,5 +29,17 @@
       <app-plugin-project [plugin]="plugin"></app-plugin-project>
     </div>
   </mat-expansion-panel>
-
+  
+  <mat-grid-list rows=1 cols=10>
+    <mat-grid-tile><img src="assets/csharp.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/dlang.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/cpp.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/python.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/java.svg" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/dotnet.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/javascript.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/sql.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/tux.png" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/win10.svg" style="max-width: 100px;"></mat-grid-tile>
+  </mat-grid-list>
 </div>
