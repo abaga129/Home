@@ -2,44 +2,53 @@
   <mat-toolbar color="primary">
     <img src="assets/myavatar.jpeg" class="img-circle">
     <span>Ethan Reker</span>
-    <a href="https://www.github.com/abaga129/"><button mat-raised-button color="accent" style="margin:10px">GitHub</button></a>
-    <a href="https://www.linkedin.com/in/ethan-reker-0a827597/"><button mat-raised-button color="accent">Linked-In</button></a>
+    <a href="https://www.github.com/abaga129/"><button mat-button color="accent" style="margin:10px">GitHub</button></a>
+    <a href="https://www.linkedin.com/in/ethan-reker-0a827597/"><button mat-button color="accent">Linked-In</button></a>
+    <a href="http://www.modernmetalproduction.com/"><button mat-button color="accent">Website</button></a>
   </mat-toolbar>
 
   <img src="assets/header.jpeg" style="width: 100%">
 
-  <mat-expansion-panel>
+  <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header color="primary">
       <mat-panel-title>
         Open Source Projects
       </mat-panel-title>
     </mat-expansion-panel-header>
-      <div *ngFor="let project of projects">
+      <mat-grid-list cols=2 rowHeight="10:3">
+        <div *ngFor="let project of projects">
+          <mat-grid-tile>
             <app-git-project [project]="project"></app-git-project>
-      </div>
+          </mat-grid-tile>
+        </div>
+      </mat-grid-list>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Audio Plugins
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <div *ngFor="let plugin of plugins">
-      <app-plugin-project [plugin]="plugin"></app-plugin-project>
-    </div>
+    <mat-grid-list cols=2 rowHeight="10:3">
+        <div *ngFor="let plugin of plugins">
+            <mat-grid-tile>
+                <app-plugin-project [plugin]="plugin"></app-plugin-project>
+            </mat-grid-tile>
+          </div>
+    </mat-grid-list>
   </mat-expansion-panel>
   
   <mat-grid-list rows=1 cols=10>
-    <mat-grid-tile><img src="assets/csharp.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/dlang.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/cpp.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/python.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/java.svg" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/dotnet.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/javascript.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/sql.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/tux.png" style="max-width: 100px;"></mat-grid-tile>
-    <mat-grid-tile><img src="assets/win10.svg" style="max-width: 100px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/csharp.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/c.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/dlang.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/cpp.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/python.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/java.svg" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/javascript.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/angular.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/sql.png" style="max-width: 50px;"></mat-grid-tile>
+    <mat-grid-tile><img src="assets/tux.png" style="max-width: 50px;"></mat-grid-tile>
   </mat-grid-list>
 </div>

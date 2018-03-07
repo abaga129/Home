@@ -19,3 +19,9 @@ p
 a{
     text-decoration: none;
 }
+
+.mat-card
+{
+    margin: 10px;
+
+}

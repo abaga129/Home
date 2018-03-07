@@ -1,9 +1,11 @@
-<mat-card>
-  <mat-card-title>
-      {{plugin.name}}
-  </mat-card-title>
-  <img mat-card-avatar src={{plugin.imageURL}}>
-  <mat-card-content>
-      <p>{{plugin.desc}}</p>
-  </mat-card-content>
-</mat-card>
+<a href={{plugin.projectURL}}>
+        <mat-card>
+                <mat-card-title>
+                    {{plugin.name}}
+                </mat-card-title>
+                <img mat-card-avatar src={{plugin.imageURL}}>
+                <mat-card-content>
+                    <p>{{plugin.desc}}</p>
+                </mat-card-content>
+              </mat-card>
+</a>
